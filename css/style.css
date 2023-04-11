@@ -411,7 +411,7 @@ main {
     line-height: 160%;
 }
 
-form {
+.form__main {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -459,6 +459,13 @@ input::placeholder, textarea::placeholder {
     background-image: url("../images/email.svg");
     background-size: 15px;
     background-position: 10px 13px;
+    background-repeat: no-repeat;
+}
+
+.input-phone{
+    background-image: url("../images/phone.svg");
+    background-size: 15px;
+    background-position: 10px 15px;
     background-repeat: no-repeat;
 }
 
@@ -529,6 +536,13 @@ button:hover{
 .slick-dots li.slick-active button:before {
     color: #E30613;
 }
+
+@media (max-width: 1235px) {
+    .control-c{
+        display: none !important;
+    }
+}
+
 
 
 /*FAQ PAGE*/
@@ -645,4 +659,93 @@ button:hover{
     font-size: 14px;
     line-height: 24px;
     color: #333333;
+}
+
+.contact{
+    padding: 80px 0;
+}
+
+.contact__title{
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    color: #262746;
+    padding-bottom: 40px;
+}
+
+.contact__form{
+    max-width: 570px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px
+}
+
+.contact-input{
+    flex-basis: 47%;
+}
+
+.contact__form textarea{
+    flex-basis: 100%;
+}
+.contact__form button{
+    flex-basis: 100%;
+}
+
+.get-in-touch__container{
+    width: 100%;
+    height: 45vh;
+    background: url("../images/contact-bg.png") no-repeat;
+    /*background-position: center;*/
+    background-size: cover;
+    object-fit: cover;
+}
+
+.get-in-touch__container-filter{
+    background: linear-gradient(180deg, rgba(19, 32, 46, 0) 0%, #13202E 100%);
+    width: 100%;
+    height: 45vh;
+}
+
+.get-in-touch__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1085px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.get-in-touch__content:last-child{
+    margin-top: 20px;
+}
+
+.get-in-touch__content-item{
+    flex-basis: 33.33%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.get-in-touch-item-text{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+}
+
+.get-in-touch-item-text.touch-address{
+    text-transform: uppercase;
+}
+
+.get-in-touch-item-text span{
+    display: block;
+    width: 100%;
+    text-align: center;
 }
