@@ -21,16 +21,23 @@
                 <a class="header-logo" href="#">
                     <img class="logo__img" src="images/logo.svg" alt="logo">
                 </a>
+                <div class="burger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
                 <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__list-item"><a class="menu__list-link" href="#">HOME</a></li>
-                        <li class="menu__list-item"><a class="menu__list-link" href="#">Tour program</a></li>
-                        <li class="menu__list-item"><a class="menu__list-link" href="#">Toronto</a></li>
-                        <li class="menu__list-item"><a class="menu__list-link" href="#">Montreal</a></li>
-                        <li class="menu__list-item"><a class="menu__list-link" href="#">Quebec</a></li>
-                        <li class="menu__list-item"><a class="menu__list-link" href="#">FAQ</a></li>
-                        <li class="menu__list-item"><a class="menu__list-link" href="#">Contact Us</a></li>
-                    </ul>
+                    <div class="menu__wrap">
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">HOME</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">Tour program</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">Toronto</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">Montreal</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">Quebec</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">FAQ</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -157,7 +164,8 @@
         </div>
         <div class="grid">
             <div class="grid__block">
-                <div class="grid__block-wrap"><img class="grid__block-image" src="images/grid-image-first.jpg" alt="city"></div>
+                <div class="grid__block-wrap"><img class="grid__block-image" src="images/grid-image-first.jpg"
+                                                   alt="city"></div>
                 <div class="grid__block-item">
                     <div class="grid__block-container">
                         <h2 class="grid__block-title">What's included</h2>
@@ -183,14 +191,17 @@
             </div>
             <div class="grid__block">
                 <div class="grid__block-item">
-                    <h2 class="grid__block-title">
+                    <h2 class="grid__block-title grid__block-title-map">
                         Map
                     </h2>
                 </div>
-                <div class="grid__block-wrap"><img class="grid__block-image" src="images/grid-image-second.jpg" alt="map"></div>
+                <div class="grid__block-wrap grid__block-wrap-map"><img class="grid__block-image"
+                                                                        src="images/grid-image-second.jpg"
+                                                                        alt="map"></div>
             </div>
             <div class="grid__block">
-                <div class="grid__block-wrap"><img class="grid__block-image" src="images/grid-image-third.jpg" alt="girl"></div>
+                <div class="grid__block-wrap"><img class="grid__block-image" src="images/grid-image-third.jpg"
+                                                   alt="girl"></div>
                 <div class="grid__block-item">
                     <div class="grid__block-container">
                         <h2 class="grid__block-title">Subscribe</h2>
@@ -201,7 +212,7 @@
                             <input class="input-first_name" type="text" name="first_name" placeholder="First Name">
                             <input class="input-last_name" type="text" name="last_name" placeholder="Last Name">
                             <input class="input-email" type="email" name="email" placeholder="Email Address">
-                            <textarea class="input-text" name="text" placeholder="Text" ></textarea>
+                            <textarea class="input-text" name="text" placeholder="Text"></textarea>
                             <button type="submit">Sign Up</button>
                         </form>
                     </div>
@@ -209,38 +220,41 @@
             </div>
             <div class="grid__block">
                 <div class="grid__block-item">
-                        <div class="grid__block-container">
-                            <h2 class="grid__block-title">Requirements
-                                to enter Canada</h2>
-                            <p class="grid__block-text">
-                                If you decide to visit Canada by air, you must obtain an Electronic Travel Authorization
-                                (eTA). This is a prerequisite if you do not have a Canadian visa or a permanent resident
-                                card. If you have Canadian citizenship, you do not need to apply for an eTA. However,
-                                you
-                                need to present a Canadian passport.If you plan to arrive in Canada by land or sea, you
-                                do
-                                not need to apply for an eTA.These requirements apply to both tourists and transit
-                                passengers.
-                            </p>
+                    <div class="grid__block-container">
+                        <h2 class="grid__block-title">Requirements
+                            to enter Canada</h2>
+                        <p class="grid__block-text">
+                            If you decide to visit Canada by air, you must obtain an Electronic Travel Authorization
+                            (eTA). This is a prerequisite if you do not have a Canadian visa or a permanent resident
+                            card. If you have Canadian citizenship, you do not need to apply for an eTA. However,
+                            you
+                            need to present a Canadian passport.If you plan to arrive in Canada by land or sea, you
+                            do
+                            not need to apply for an eTA.These requirements apply to both tourists and transit
+                            passengers.
+                        </p>
                     </div>
                 </div>
-                <div class="grid__block-wrap"><img class="grid__block-image" src="images/grid-image-fourth.jpg" alt="papers"></div>
+                <div class="grid__block-wrap"><img class="grid__block-image" src="images/grid-image-fourth.jpg"
+                                                   alt="papers"></div>
             </div>
         </div>
         <div class="slider">
             <div class="container">
                 <!--                <div class="slider-prev"><img src="images/prev.svg"></div>-->
                 <h1 class="slider-title">Gallery</h1>
-                <div class="slider__inner">
-                    <div class="slider-item"><img src="images/slider-image-first.png" alt="first"></div>
-                    <div class="slider-item"><img src="images/slider-image-second.png" alt="second"></div>
-                    <div class="slider-item"><img src="images/slider-image-third.png" alt="third"></div>
-                    <div class="slider-item"><img src="images/slider-image-first.png" alt="first"></div>
-                    <div class="slider-item"><img src="images/slider-image-second.png" alt="second"></div>
-                    <div class="slider-item"><img src="images/slider-image-third.png" alt="third"></div>
-                    <div class="slider-item"><img src="images/slider-image-first.png" alt="first"></div>
-                    <div class="slider-item"><img src="images/slider-image-second.png" alt="second"></div>
-                    <div class="slider-item"><img src="images/slider-image-third.png" alt="third"></div>
+                <div class="slider-container">
+                    <div class="slider__inner">
+                        <div class="slider-item"><img src="images/slider-image-first.png" alt="first"></div>
+                        <div class="slider-item"><img src="images/slider-image-second.png" alt="second"></div>
+                        <div class="slider-item"><img src="images/slider-image-third.png" alt="third"></div>
+                        <div class="slider-item"><img src="images/slider-image-first.png" alt="first"></div>
+                        <div class="slider-item"><img src="images/slider-image-second.png" alt="second"></div>
+                        <div class="slider-item"><img src="images/slider-image-third.png" alt="third"></div>
+                        <div class="slider-item"><img src="images/slider-image-first.png" alt="first"></div>
+                        <div class="slider-item"><img src="images/slider-image-second.png" alt="second"></div>
+                        <div class="slider-item"><img src="images/slider-image-third.png" alt="third"></div>
+                    </div>
                 </div>
                 <!--                <div class="slider-next"><img src="images/next.svg"></div>-->
             </div>
@@ -279,7 +293,7 @@
                 </nav>
             </div>
             <div class="footer__follow">
-                <p class="footer__follow-title">Follow us</p>
+                <div class="footer__follow-title-wrap"><p class="footer__follow-title">Follow us</p></div>
                 <a class="footer__follow-link" href="#"><img src="images/facebook.svg" alt="facebook"></a>
                 <a class="footer__follow-link" href=""><img src="images/instagram.svg" alt="instagram"></a>
             </div>
@@ -291,7 +305,7 @@
 </div>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 </html>
