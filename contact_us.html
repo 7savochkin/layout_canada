@@ -19,16 +19,23 @@
                 <a class="header-logo" href="#">
                     <img class="logo__img" src="images/logo.svg" alt="logo">
                 </a>
+                <div class="burger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
                 <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__list-item"><a class="menu__list-link" href="#">HOME</a></li>
-                        <li class="menu__list-item"><a class="menu__list-link" href="#">Tour program</a></li>
-                        <li class="menu__list-item"><a class="menu__list-link" href="#">Toronto</a></li>
-                        <li class="menu__list-item"><a class="menu__list-link" href="#">Montreal</a></li>
-                        <li class="menu__list-item"><a class="menu__list-link" href="#">Quebec</a></li>
-                        <li class="menu__list-item"><a class="menu__list-link" href="#">FAQ</a></li>
-                        <li class="menu__list-item"><a class="menu__list-link" href="#">Contact Us</a></li>
-                    </ul>
+                    <div class="menu__wrap">
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">HOME</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">Tour program</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">Toronto</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">Montreal</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">Quebec</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">FAQ</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -48,8 +55,8 @@
                 <form class="contact__form" method="post">
                     <input class="input-first_name contact-input" type="text" name="first_name"
                            placeholder="First Name">
-                    <input class="input-last_name contact-input" type="text" name="last_name" placeholder="Last Name">
                     <input class="input-phone contact-input" type="text" name="phone" placeholder="Telephone Number">
+                    <input class="input-last_name contact-input" type="text" name="last_name" placeholder="Last Name">
                     <input class="input-email contact-input" type="email" name="email" placeholder="Email Address">
                     <textarea class="input-text" name="text" placeholder="Your Message"></textarea>
                     <button type="submit">Submit</button>
@@ -121,5 +128,8 @@
         </div>
     </footer>
 </div>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/burger.js"></script>
 </body>
 </html>

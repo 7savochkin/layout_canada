@@ -717,6 +717,14 @@ button:hover{
     gap: 30px
 }
 
+.contact__form.input-first_name{
+}
+.contact__form.input-first_name{
+    order: -1;
+}
+.contact__form.input-first_name{}
+.contact__form.input-first_name{}
+
 .contact-input{
     flex-basis: 47%;
 }
@@ -732,9 +740,9 @@ button:hover{
     width: 100%;
     height: 45vh;
     background: url("../images/contact-bg.png") no-repeat;
-    /*background-position: center;*/
-    background-size: cover;
-    object-fit: cover;
+    background-position: center;
+    /*background-size: cover;*/
+    /*object-fit: cover;*/
 }
 
 .get-in-touch__container-filter{
@@ -901,7 +909,7 @@ button:hover{
     }
 
     .menu.active{
-        top: 8.5%;
+        top: 82px;
     }
 
     body.lock{
@@ -990,6 +998,10 @@ button:hover{
         justify-content: center;
     }
 
+    .grid__block-item-form{
+        padding: 0;
+    }
+
     .grid__block-title{
         text-align: center;
     }
@@ -1008,7 +1020,33 @@ button:hover{
     .form__main button{
         max-width: 100%;
     }
+
+    /*FAQ*/
+
+    .faq__block{
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .faq__block-img{
+        margin: 0 auto;
+    }
+
+    /*CONTENT*/
+
+    .content__wrap{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .content__image{
+        width: 100%;
+        height: 100%;
+        padding: 0 0 0 0;
+    }
 }
+
+
 
 @media(max-width: 600px){
 
@@ -1022,7 +1060,60 @@ button:hover{
         text-transform: uppercase;
     }
 
+    /*SLIDER*/
+
     .slick-slide {
         width: 200px;
+    }
+
+    /*CONTACT US*/
+
+    .contact-input{
+        max-width: none;
+        flex-basis: 100%;
+    }
+
+    .input-first_name{
+        order: -1;
+    }
+    .input-last_name{
+        order: -1;
+    }
+
+    .contact__form button{
+        max-width: none;
+    }
+
+    .contact__form textarea{
+        max-width: none;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .faq__content{
+        margin-bottom: 0;
+    }
+
+    .faq__block-img{
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-bottom: -4px;
+    }
+
+}
+
+@media (max-width: 760px) {
+    /*GET-IN-TOUCH*/
+
+    .get-in-touch__content{
+        flex-direction: column;
+        margin: 0 0;
+        align-items: flex-start;
+    }
+
+    .get-in-touch__content-item{
+        flex-direction: row;
+        margin-left: 20px;
     }
 }
