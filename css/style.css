@@ -258,7 +258,7 @@ main {
 .learn-more__container {
     width: 100%;
     height: 95vh;
-    background: url("../images/image2.svg") no-repeat;
+    background: url("../images/main-bg.png") no-repeat;
     background-size: cover;
     object-fit: cover;
     display: flex;
@@ -1115,5 +1115,15 @@ button:hover{
     .get-in-touch__content-item{
         flex-direction: row;
         margin-left: 20px;
+    }
+
+    .grid__block-item-form{
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 400px){
+    .grid__block-wrap-map{
+        height: 400px;
     }
 }
