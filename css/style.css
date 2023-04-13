@@ -471,6 +471,11 @@ input::placeholder, textarea::placeholder {
 /*    background-repeat: no-repeat;*/
 /*}*/
 
+textarea:focus, input:focus, input[type]:focus {
+    border-color: #8C9AAA;
+    outline: 0 none;
+}
+
 .input-first_name, .input-last_name {
     background-image: url("../images/user.svg");
     background-position: 10px 12px;
